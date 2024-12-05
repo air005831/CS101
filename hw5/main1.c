@@ -2,10 +2,14 @@
 
 int main()
 {
-    int x = 9;
-    int y = 9;
-    int z = 1;
-    printf("%d",x*100+y*10+z);
+    int times = 7;
+    for(int i = 1 ; i <= times ; i++){
+        printf("%*d" ,times-i+1 ,i );
+        for(int j = 1 ; j < i ; j++ ){
+            printf(" %d" ,i );
+        }
+        printf("\n");
+    }
 
     return 0;
 }
